@@ -1,0 +1,11 @@
+﻿USE AgricultureDB;
+GO
+
+CREATE TABLE dbo.Cart
+(
+    CartID INT IDENTITY(1,1) PRIMARY KEY,
+    FarmerID INT NOT NULL,
+    ProductID INT NOT NULL,
+    Quantity INT NOT NULL DEFAULT 1
+);
+GO
